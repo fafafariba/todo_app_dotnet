@@ -2,6 +2,8 @@
 
 A full-stack todo task management application.
 
+> **Note:** This project was originally architected in [TypeScript](https://https://github.com/fafafariba/todo_app_typescript) (Node.js + Express + Prisma) and ported to .NET using [Claude Code](https://claude.ai/claude-code). The TypeScript version served as a prototype to validate architecture decisions before translating to the target stack.
+
 ## Tech Stack
 
 - **Backend:** .NET 8, ASP.NET Core, Entity Framework Core, SQLite
