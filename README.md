@@ -112,6 +112,9 @@ Routes are prefixed with `/api/v1/`. If breaking changes are needed in the futur
 
 The frontend stores the JWT in localStorage for simplicity. localStorage is theoretically vulnerable to XSS (malicious scripts can read it), but React mitigates this by escaping output by default — you'd have to use `dangerouslySetInnerHTML` or load untrusted third-party scripts (analytics, ad trackers) to create an opening. For apps without third-party scripts, the risk is low. The more secure production pattern is httpOnly cookies, which the browser never exposes to JavaScript, paired with a `SameSite` cookie flag to prevent CSRF (where an attacker's site tricks the browser into making requests on the user's behalf).
 
+### Additional Considerations
+See [explanations.MD](https://github.com/fafafariba/todo_app_dotnet/blob/main/explanations.md) for more
+
 ---
 
 ## Scalability Considerations
